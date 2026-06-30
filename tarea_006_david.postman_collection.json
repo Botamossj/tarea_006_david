@@ -1,0 +1,64 @@
+{
+  "info": {
+    "_postman_id": "a3f7c912-4b6e-4d21-9f01-8e2d5c4a1b90",
+    "name": "tarea_006_david",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create_Student",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"Santiago Vallejo\",\r\n    \"email\": \"vallejodavid1106@gmail.com\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8082/api/student",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8082",
+          "path": [
+            "api",
+            "student"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get_all_students",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8082/api/student",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8082",
+          "path": [
+            "api",
+            "student"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
